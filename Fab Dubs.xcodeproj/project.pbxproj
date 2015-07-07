@@ -14,6 +14,8 @@
 		EFC5E0091B446D2500C1C2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC5E0071B446D2500C1C2E2 /* LaunchScreen.storyboard */; };
 		EFC5E0141B446D2600C1C2E2 /* Fab_DubsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5E0131B446D2600C1C2E2 /* Fab_DubsTests.swift */; };
 		EFC5E01F1B446D2600C1C2E2 /* Fab_DubsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5E01E1B446D2600C1C2E2 /* Fab_DubsUITests.swift */; };
+		EFC5E02D1B446F5900C1C2E2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5E02C1B446F5900C1C2E2 /* SecondViewController.swift */; };
+		EFC5E02F1B446F6E00C1C2E2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5E02E1B446F6E00C1C2E2 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		EFC5E01A1B446D2600C1C2E2 /* Fab DubsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fab DubsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC5E01E1B446D2600C1C2E2 /* Fab_DubsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fab_DubsUITests.swift; sourceTree = "<group>"; };
 		EFC5E0201B446D2600C1C2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC5E02C1B446F5900C1C2E2 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EFC5E02E1B446F6E00C1C2E2 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				EFC5DFFE1B446D2500C1C2E2 /* AppDelegate.swift */,
 				EFC5E0001B446D2500C1C2E2 /* ViewController.swift */,
+				EFC5E02C1B446F5900C1C2E2 /* SecondViewController.swift */,
+				EFC5E02E1B446F6E00C1C2E2 /* ThirdViewController.swift */,
 				EFC5E0021B446D2500C1C2E2 /* Main.storyboard */,
 				EFC5E0051B446D2500C1C2E2 /* Assets.xcassets */,
 				EFC5E0071B446D2500C1C2E2 /* LaunchScreen.storyboard */,
@@ -255,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC5E02D1B446F5900C1C2E2 /* SecondViewController.swift in Sources */,
 				EFC5E0011B446D2500C1C2E2 /* ViewController.swift in Sources */,
+				EFC5E02F1B446F6E00C1C2E2 /* ThirdViewController.swift in Sources */,
 				EFC5DFFF1B446D2500C1C2E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

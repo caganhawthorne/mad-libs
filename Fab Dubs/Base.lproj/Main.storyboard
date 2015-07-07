@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kdW-Pg-h9P">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fab_Dubs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,215 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdK-YJ-R4F">
+                                <rect key="frame" x="202" y="320" width="197" height="89"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-UltraLightItalic" family="Avenir Next Condensed" pointSize="35"/>
+                                <state key="normal" title="Play!">
+                                    <color key="titleColor" red="0.78874684340000001" green="0.014623361430000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ynu-xP-r9l" kind="show" id="oRQ-wi-6SV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Marvel Mad Libs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgJ-wY-ebd">
+                                <rect key="frame" x="78" y="259" width="445" height="53"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.78874684340000001" green="0.014623361430000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="-2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31611032196969702" green="0.0058606833477810307" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DgJ-wY-ebd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DZo-Rc-Ai1"/>
+                            <constraint firstItem="HdK-YJ-R4F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Thh-Gg-QAK"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="K1C-4c-Pdz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1711" y="289"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="psV-lz-Uvt">
+            <objects>
+                <viewController id="ynu-xP-r9l" customClass="SecondViewController" customModule="Fab_Dubs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lex-cl-KD6"/>
+                        <viewControllerLayoutGuide type="bottom" id="U7w-XJ-p3y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JjE-sy-ZC4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DII-ta-cwo">
+                                <rect key="frame" x="213" y="118" width="175" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Noun" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rh3-3n-cRJ">
+                                <rect key="frame" x="213" y="154" width="175" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adverb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="924-s4-JfJ">
+                                <rect key="frame" x="213" y="265" width="175" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6o5-fN-Wha">
+                                <rect key="frame" x="213" y="301" width="175" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Noun" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfQ-gK-eQQ">
+                                <rect key="frame" x="213" y="339" width="175" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb (Past Tense)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfi-6q-dNI">
+                                <rect key="frame" x="213" y="190" width="175" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ezi-aW-yhp">
+                                <rect key="frame" x="213" y="227" width="175" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNp-jp-GJo">
+                                <rect key="frame" x="272" y="376" width="56" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Italic" family="Avenir Next Condensed" pointSize="15"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.78874684340000001" green="0.014623361430000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0gg-P2-gyd" kind="show" id="Byt-u8-Og1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Noun" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0lO-og-d5w">
+                                <rect key="frame" x="213" y="80" width="175" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.316110322" green="0.0058606833479999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0lO-og-d5w" firstAttribute="centerX" secondItem="JjE-sy-ZC4" secondAttribute="centerX" id="4xe-ky-d1b"/>
+                            <constraint firstItem="DII-ta-cwo" firstAttribute="centerX" secondItem="JjE-sy-ZC4" secondAttribute="centerX" id="6ft-jj-VaU"/>
+                            <constraint firstItem="6o5-fN-Wha" firstAttribute="centerX" secondItem="JjE-sy-ZC4" secondAttribute="centerX" id="9uo-m5-zBv"/>
+                            <constraint firstItem="rh3-3n-cRJ" firstAttribute="centerX" secondItem="JjE-sy-ZC4" secondAttribute="centerX" id="ZR8-fZ-lHs"/>
+                            <constraint firstItem="Ezi-aW-yhp" firstAttribute="centerX" secondItem="JjE-sy-ZC4" secondAttribute="centerX" id="lMz-kH-dw6"/>
+                            <constraint firstItem="qfi-6q-dNI" firstAttribute="centerX" secondItem="JjE-sy-ZC4" secondAttribute="centerX" id="vqH-oo-pNY"/>
+                            <constraint firstItem="dfQ-gK-eQQ" firstAttribute="centerX" secondItem="JjE-sy-ZC4" secondAttribute="centerX" id="wWv-of-gMD"/>
+                            <constraint firstItem="UNp-jp-GJo" firstAttribute="centerX" secondItem="JjE-sy-ZC4" secondAttribute="centerX" id="wgr-bx-k89"/>
+                            <constraint firstItem="924-s4-JfJ" firstAttribute="centerX" secondItem="JjE-sy-ZC4" secondAttribute="centerX" id="zzO-01-W1A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yaY-8m-U70"/>
+                    <connections>
+                        <outlet property="eighthTextField" destination="dfQ-gK-eQQ" id="Ynd-8M-Gsw"/>
+                        <outlet property="fifthTextField" destination="Ezi-aW-yhp" id="60A-8g-zbF"/>
+                        <outlet property="firstTextField" destination="0lO-og-d5w" id="7JQ-r4-F6B"/>
+                        <outlet property="fourthTextField" destination="qfi-6q-dNI" id="AeG-6R-UKf"/>
+                        <outlet property="secondTextField" destination="DII-ta-cwo" id="m1J-y7-Zk1"/>
+                        <outlet property="seventhTextField" destination="6o5-fN-Wha" id="kxJ-Us-9Ws"/>
+                        <outlet property="sixthTextField" destination="924-s4-JfJ" id="L2J-6L-xbF"/>
+                        <outlet property="sumbmitButton" destination="UNp-jp-GJo" id="cNf-r4-dIm"/>
+                        <outlet property="thirdTextField" destination="rh3-3n-cRJ" id="tma-7e-Rnh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVc-lC-zIO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2573" y="303"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="4km-8o-Dew">
+            <objects>
+                <viewController id="0gg-P2-gyd" customClass="ThirdViewController" customModule="Fab_Dubs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fid-Q4-LNJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ac4-Sl-8Hg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Je-UK-WeR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqx-AE-Qd3">
+                                <rect key="frame" x="194" y="513" width="212" height="30"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-UltraLightItalic" family="Avenir Next Condensed" pointSize="25"/>
+                                <state key="normal" title="Play Again!">
+                                    <color key="titleColor" red="0.78874684340000001" green="0.014623361430000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kdW-Pg-h9P" kind="show" id="pbG-B1-eEl"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z94-Lj-uBd">
+                                <rect key="frame" x="176" y="146" width="249" height="307"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="307" id="C9r-eI-et9"/>
+                                    <constraint firstAttribute="width" secondItem="Z94-Lj-uBd" secondAttribute="height" multiplier="249:307" id="Rhc-5l-hz8"/>
+                                    <constraint firstAttribute="width" constant="249" id="YcT-BJ-ft5"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Loki's Downfall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFP-ia-J7s">
+                                <rect key="frame" x="215" y="99" width="170" height="31"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.78874684340000001" green="0.014623361430000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.316110322" green="0.0058606833479999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fqx-AE-Qd3" firstAttribute="centerX" secondItem="8Je-UK-WeR" secondAttribute="centerX" id="Oki-ql-aj1"/>
+                            <constraint firstItem="Z94-Lj-uBd" firstAttribute="centerX" secondItem="8Je-UK-WeR" secondAttribute="centerX" id="Vqw-JW-j0a"/>
+                            <constraint firstItem="yFP-ia-J7s" firstAttribute="centerX" secondItem="8Je-UK-WeR" secondAttribute="centerX" id="Xhf-9v-Dx3"/>
+                            <constraint firstItem="Z94-Lj-uBd" firstAttribute="centerY" secondItem="8Je-UK-WeR" secondAttribute="centerY" id="ptE-ny-I58"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="storyTextField" destination="Z94-Lj-uBd" id="zY8-Ln-z3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1P-Xl-QYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3244" y="303"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h56-Ky-0Pu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kdW-Pg-h9P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tb6-Vf-Mzw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="coW-Om-pGk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TVk-O2-UUO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="-18"/>
         </scene>
     </scenes>
 </document>
